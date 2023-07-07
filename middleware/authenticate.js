@@ -3,7 +3,7 @@ const User = require("../models/userModel");
 
 const authenticate = async (req, res, next) => {
     try {
-        const token = req.cookies.jwtoken;
+         const token=req.session.token;
 
         const verifyToken = jwt.verify(token, process.env.KEY);
 
