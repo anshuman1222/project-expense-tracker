@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Dashboard } from "./pages/dashboard/index";
 
 
-const BASE_URL = "https://new-expensetrackerserver.onrender.com/api/";
+
 function App() {
   
   return (
