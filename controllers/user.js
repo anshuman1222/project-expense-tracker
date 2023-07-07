@@ -63,7 +63,7 @@ exports.userVerification=(req,res)=>{
 }
 
 exports.userLogout=(req,res)=>{
-    res.clearCookie("jwtoken");
+    req.session.token = "";
 
     res.status(200).send('User Logout');
 }
