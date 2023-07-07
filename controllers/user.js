@@ -14,7 +14,7 @@ exports.loginUser=async(req,res)=>{
 
             const token = await userLogin.generateAuthTokon()
 
-            res.status(200).cookie('jwtoken', token)
+            req.session.token = token;
 
             console.log(token)
 
